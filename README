@@ -1,0 +1,13 @@
+DESCRIPTION:
+
+SensorX is a breakout board to help integrate sensors to the analog inputs of RaceCapture. 
+
+7 analog inputs are supported, with pullup resistors that can be disabled by cutting traces.
+
+Multiple ground and 5v voltage references are also provided.
+
+The board is sized to be finished  with shrink-tubing and installed in-line with wiring harness bundles
+
+LICENSE:
+
+
