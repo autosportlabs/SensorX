@@ -2585,9 +2585,9 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <part name="FRAME1" library="frames" deviceset="FRAME_C_L" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0204/5" value="2.2K"/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
-<part name="GND_IN" library="wirepad" deviceset="WIREPAD" device="3,17/1,2"/>
+<part name="GND" library="wirepad" deviceset="WIREPAD" device="3,17/1,2"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="5V_IN" library="wirepad" deviceset="WIREPAD" device="3,17/1,2"/>
+<part name="5V" library="wirepad" deviceset="WIREPAD" device="3,17/1,2"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="1" library="wirepad" deviceset="WIREPAD" device="3,17/1,2"/>
 <part name="IN_1" library="wirepad" deviceset="WIREPAD" device="3,17/1,2"/>
@@ -4606,9 +4606,9 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <instance part="P+14" gate="1" x="96.52" y="20.32" smashed="yes">
 <attribute name="VALUE" x="98.298" y="22.86" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND_IN" gate="G$1" x="91.186" y="48.26" smashed="yes"/>
+<instance part="GND" gate="G$1" x="91.186" y="48.26" smashed="yes"/>
 <instance part="GND7" gate="1" x="96.52" y="42.8752"/>
-<instance part="5V_IN" gate="G$1" x="91.186" y="66.04" smashed="yes"/>
+<instance part="5V" gate="G$1" x="91.186" y="66.04" smashed="yes"/>
 <instance part="P+1" gate="1" x="96.52" y="73.66" smashed="yes">
 <attribute name="VALUE" x="98.298" y="76.2" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -4719,7 +4719,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <wire x1="96.52" y1="45.4152" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="48.26" x2="93.726" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="GND_IN" gate="G$1" pin="P"/>
+<pinref part="GND" gate="G$1" pin="P"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="-17.78" x2="111.76" y2="-17.78" width="0.1524" layer="91"/>
@@ -4774,7 +4774,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <wire x1="96.52" y1="66.04" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="93.726" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<pinref part="5V_IN" gate="G$1" pin="P"/>
+<pinref part="5V" gate="G$1" pin="P"/>
 </segment>
 <segment>
 <wire x1="96.52" y1="-40.64" x2="96.52" y2="-43.18" width="0.1524" layer="91"/>
