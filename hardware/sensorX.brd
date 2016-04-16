@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -130,7 +130,7 @@
 <text x="13.8562" y="9.398" size="1.27" layer="21" font="vector">RaceCapture Inputs</text>
 <text x="31.8902" y="11.811" size="1.27" layer="21" font="vector">SensorX</text>
 <text x="80.7852" y="0.254" size="0.8128" layer="21" font="vector">www.autosportlabs.net</text>
-<text x="95.5172" y="0.254" size="0.8128" layer="21" font="vector">Rev B</text>
+<text x="95.5172" y="0.254" size="0.8128" layer="21" font="vector">Rev C</text>
 <rectangle x1="23.4612" y1="11.4542" x2="30.5478" y2="11.4668" layer="21"/>
 <rectangle x1="23.4612" y1="11.4669" x2="30.5478" y2="11.4795" layer="21"/>
 <rectangle x1="23.4612" y1="11.4796" x2="30.5478" y2="11.4922" layer="21"/>
@@ -2223,6 +2223,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2524,11 +2527,12 @@ design rules under a new name.</description>
 <wire x1="50.102" y1="5.334" x2="50.864" y2="4.572" width="0.3048" layer="16"/>
 <wire x1="48.451" y1="5.334" x2="50.102" y2="5.334" width="0.3048" layer="16"/>
 <wire x1="46.165" y1="3.048" x2="48.451" y2="5.334" width="0.3048" layer="16"/>
-<wire x1="27.242" y1="3.048" x2="46.165" y2="3.048" width="0.3048" layer="16"/>
-<wire x1="23.432" y1="6.858" x2="27.242" y2="3.048" width="0.3048" layer="16"/>
+<wire x1="25.146" y1="3.048" x2="46.165" y2="3.048" width="0.3048" layer="16"/>
 <contactref element="R4" pad="2"/>
 <wire x1="20.683446875" y1="4.97105" x2="22.570396875" y2="6.858" width="0.3048" layer="1"/>
 <wire x1="22.570396875" y1="6.858" x2="23.432" y2="6.858" width="0.3048" layer="1"/>
+<wire x1="25.146" y1="3.048" x2="23.432" y2="4.762" width="0.3048" layer="16"/>
+<wire x1="23.432" y1="4.762" x2="23.432" y2="6.858" width="0.3048" layer="16"/>
 </signal>
 <signal name="SENSOR5">
 <contactref element="IN_5" pad="1"/>
