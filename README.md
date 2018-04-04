@@ -1,9 +1,9 @@
 DESCRIPTION:
 
 SensorX is a breakout board designed to make it easy to integrate sensors to the analog 
-inputs of RaceCapture. 
+inputs of RaceCapture.
 
-7 channels are supported to match the inputs of RaceCapture. Pullup resistors are included 
+8 channels are supported to match the inputs of RaceCapture. Pullup resistors are included 
 on all channels to enable resistive sensors such as temperature & fuel level; these resistors 
 can be disabled by cutting traces.
 
@@ -20,4 +20,7 @@ Creative Commons BY-SA license - see the LICENSE file for the full text.
 MORE INFO:
 
 for more information visit http://www.autosportlabs.net
+
+![ScreenShot](https://github.com/autosportlabs/SensorX/blob/master/hardware/sensorX_board.png?raw=true)
+
 
