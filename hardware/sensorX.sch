@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2643,6 +2643,14 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <part name="P+13" library="supply1" deviceset="+5V" device=""/>
 <part name="5V_7" library="wirepad" deviceset="WIREPAD" device="3,17/1,2"/>
 <part name="P+15" library="supply1" deviceset="+5V" device=""/>
+<part name="R8" library="rcl" deviceset="R-US_" device="0204/5" value="2.2K"/>
+<part name="P+16" library="supply1" deviceset="+5V" device=""/>
+<part name="8" library="wirepad" deviceset="WIREPAD" device="3,17/1,2"/>
+<part name="8_IN" library="wirepad" deviceset="WIREPAD" device="3,17/1,2"/>
+<part name="GND_8" library="wirepad" deviceset="WIREPAD" device="3,17/1,2"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="5V_8" library="wirepad" deviceset="WIREPAD" device="3,17/1,2"/>
+<part name="P+17" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4710,6 +4718,21 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <instance part="P+15" gate="1" x="236.22" y="-104.14" smashed="yes">
 <attribute name="VALUE" x="237.998" y="-101.6" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="R8" gate="G$1" x="220.98" y="-144.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="226.5426" y="-143.002" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="223.266" y="-142.24" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="P+16" gate="1" x="220.98" y="-134.62" smashed="yes">
+<attribute name="VALUE" x="222.758" y="-132.08" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="8" gate="G$1" x="203.2" y="-165.1" smashed="yes"/>
+<instance part="8_IN" gate="G$1" x="241.3" y="-165.1" smashed="yes" rot="R180"/>
+<instance part="GND_8" gate="G$1" x="241.3" y="-172.72" smashed="yes" rot="R180"/>
+<instance part="GND9" gate="1" x="236.22" y="-177.8"/>
+<instance part="5V_8" gate="G$1" x="241.3" y="-157.48" smashed="yes" rot="R180"/>
+<instance part="P+17" gate="1" x="236.22" y="-149.86" smashed="yes">
+<attribute name="VALUE" x="237.998" y="-147.32" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4762,6 +4785,12 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <wire x1="236.22" y1="-127" x2="236.22" y2="-129.54" width="0.1524" layer="91"/>
 <pinref part="GND_7" gate="G$1" pin="P"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="238.76" y1="-172.72" x2="236.22" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-172.72" x2="236.22" y2="-175.26" width="0.1524" layer="91"/>
+<pinref part="GND_8" gate="G$1" pin="P"/>
+<pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -4848,6 +4877,17 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <pinref part="5V_7" gate="G$1" pin="P"/>
 <pinref part="P+15" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<wire x1="220.98" y1="-137.16" x2="220.98" y2="-139.7" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="P+16" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<wire x1="238.76" y1="-157.48" x2="236.22" y2="-157.48" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-157.48" x2="236.22" y2="-152.4" width="0.1524" layer="91"/>
+<pinref part="5V_8" gate="G$1" pin="P"/>
+<pinref part="P+17" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="SENSOR1" class="0">
 <segment>
@@ -4931,6 +4971,18 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <pinref part="7_IN" gate="G$1" pin="P"/>
 <pinref part="7" gate="G$1" pin="P"/>
 <pinref part="R7" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="SENSOR8" class="0">
+<segment>
+<wire x1="205.74" y1="-165.1" x2="220.98" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-165.1" x2="238.76" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-149.86" x2="220.98" y2="-165.1" width="0.1524" layer="91"/>
+<junction x="220.98" y="-165.1"/>
+<label x="215.9" y="-162.56" size="1.778" layer="95" rot="R180"/>
+<pinref part="8_IN" gate="G$1" pin="P"/>
+<pinref part="8" gate="G$1" pin="P"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
